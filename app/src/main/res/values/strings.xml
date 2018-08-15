@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hayk Instigate Task</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="user_name">User name</string>
+    <string name="phone">phone</string>
+    <string name="phoneNum">055050029</string>
+    <string name="email">eMail :</string>
+    <string name="myMail">www.hayk5555.list.ru</string>
+    <string name="myEmail">www.hayk5555@list.ru</string>
+</resources>

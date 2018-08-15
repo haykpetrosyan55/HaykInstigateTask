@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".UserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0dp"
+        android:layout_weight="6"
+        android:background="@color/colorPrimaryDark">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ImageID"
+            android:layout_width="@dimen/size150dp"
+            android:layout_height="@dimen/size150dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_face_red"/>
+
+        <TextView
+            android:id="@+id/UserNameID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ImageID"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/size5dp"
+            android:text="@string/user_name"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/size30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/phoneID"
+            android:layout_width="@dimen/size55dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/phone"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/userPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/size2dp"
+            android:layout_toEndOf="@+id/phoneID"
+            android:layout_toStartOf="@+id/callButtonId"
+            android:gravity="center_vertical"
+            android:text="@string/phoneNum"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/size25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/callButtonId"
+            android:layout_width="@dimen/size50dp"
+            android:layout_height="@dimen/size50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_call" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="@dimen/size55dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/email"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/emailID"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/size2dp"
+            android:layout_toEndOf="@+id/email"
+            android:layout_toStartOf="@id/emailButtonID"
+            android:gravity="center_vertical"
+            android:text="@string/myEmail"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/size20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/emailButtonID"
+            android:layout_width="@dimen/size50dp"
+            android:layout_height="@dimen/size50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_email" />
+    </RelativeLayout>
+
+</LinearLayout>
